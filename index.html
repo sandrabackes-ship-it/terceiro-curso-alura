@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Nosso primeiro site</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog</h1>
+        <p>Vou compartilhar conhecimentos com você</p>
+        <img src="./images.jpg" alt="imagem um">
+    </header>
+    <main>
+        <article>
+            <div>
+            <h2> series </h2>
+            <p>Por: Sandra</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de series para assistir e curiosidades.
+                FATOS HISTÓRICOS E RECORDES
+            Series mais assistidas: Stranger Things, Breaking Bad, Teen Wolf, Outer Banks, Riverdale, The Walking Dead, etc.
+            Primeiro acidente no Brasil: A primeira produção seriada de ficção do país foi a adaptação de Sítio do Picapau Amarelo, que estreou em 1952 na extinta TV Tupi. Seus episódios eram encenados e transmitidos totalmente ao vivo.
+            Garagem milionária: Donos de carros da Bugatti possuem, em média, 84 carros, três aviões e um iate</p>
+        </div>
+        <button>❤️ <span>0</span></button>
+        <button>🫤 <span>0</span></button>
+        <button>😐 <span>0</span></button>
+        </article>
+        <article>
+            <div>
+            <h2> Sonhos </h2>
+            <p>Por: Luciele</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar meus Sonhos.
+                Um dos meus sonhos é me formar em medicina veterinária, e sonho ter meu próprio sítio com meus animais, principalmente
+                um cavalo, que é um dos meus animais favoritos. Um outro sonho, é ter minha própria clínica veterinária para cuidar de animais
+                de portes pequenos aos de portes grandes, até os animais exóticos, todos sem exceção, pois amo animais! tenho focado bastante nos
+                estudos para conseguir me formar e ir para uma faculdade especializada nesta área.</p>
+        </div>
+        <button>❤️ <span>0</span></button>
+        <button>🫤 <span>0</span></button>
+        <button>😐 <span>0</span></button>
+        </article>
+        <article>
+             <div>
+            <h2> Escola </h2>
+            <p>Por: Luciele</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar coisas da escola.
+                Eu costumo a ter bastante material escolar, como canetas de várias cores, borrachas diferentes e materiais diversos.
+            Tem poucas matérias que gosto, como inglês, português e educação fisica.</p>
+        </div>
+        <button>❤️ <span>0</span></button>
+        <button>🫤 <span>0</span></button>
+        <button>😐 <span>0</span></button>
+        </article>
+       <article>
+         <div>
+            <h2> Coisas que me irritam </h2>
+            <p>Por: Luciele</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar coisas que me irritam.
+                Uma das coisas que me irrita, é pessoas que não sabem conversar, e só gritam, quando tenta
+                conversar, a pessoa não quer perder a razão e grita sem motivos, já passei muito isso.
+            Outra coisa é pessoa que mastiga muito alto, é até engraçado, parece um animal comendo.
+        Também tem a pessoa que só quer brigar, tem aquela que tudo é sobre ela, odeio esse tipo de pessoas. 
+        </div>
+        <button>❤️ <span>0</span></button>
+        <button>🫤 <span>0</span></button>
+        <button>😐 <span>0</span></button>
+       </article>
+       
+    </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    })
+</script>
+
+</html>

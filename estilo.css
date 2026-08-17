@@ -1,0 +1,32 @@
+body{
+    max-width: 100vw;
+}
+header {
+    background-color: #183C63;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+}
+
+img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+main{
+    display:flex;
+    flex-wrap: wrap;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #4cc474;
+    gap: 16px;
+    padding: 16px;
+    flex: 1 1 25%;
+}
